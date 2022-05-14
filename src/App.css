@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+*{
+  background-color:#ffffff;
+
+}
+.navbar{
+  background-color: #ffffff;
+}
+.navMenu {
+  
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+  top: 0;
+  padding: 20px;
+  z-index: 100;
+}
+.break {
+  margin-left: 1000px;
+  top: -50px;
+}
+.navMenu.a {
+  text-decoration: none;
+  margin-left: 700px;
+}
+.a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+  width: 100px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navMenu .a:hover {
+  color: #d4081d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #d4081d;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navMenu .a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.navMenu .a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navMenu .a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
